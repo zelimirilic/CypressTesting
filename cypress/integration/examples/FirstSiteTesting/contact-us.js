@@ -33,4 +33,4 @@ describe("Test - Contact Us Form - Site One", () => {
         cy.get('body').contains('Error: all fields')
 
     });
-})
+});
