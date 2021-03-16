@@ -1,7 +1,7 @@
 
 
 describe("Test - Contact Us Form - Site One", () => {
-    it('Should be able to submit', () => {
+    it.only('Should be able to submit', () => {
         
         //cy.visit("http://webdriveruniversity.com/Contact-Us/contactus.html")
         //cy.get("#contact-us").click()

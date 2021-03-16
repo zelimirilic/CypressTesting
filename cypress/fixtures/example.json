@@ -1,5 +1,10 @@
 {
   
   "email": "admin@yourstore.com",
-  "password": "admin"
+  "password": "admin",
+  "firstName": "zelimir",
+  "lastName": "ilic",
+  "textArea": "In this key-value pair in java script object notation file I have just put this text"
+
+
 }

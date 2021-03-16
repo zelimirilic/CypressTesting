@@ -1,6 +1,10 @@
 
 
 describe('Test - Contact Us Form - Site Two', () => {
+
+    before(() => {
+        cy.fixture("userData").as('user')
+    });
     it('Should be able to submit', () => {
 
         cy.visit("https://automationteststore.com/");
@@ -9,9 +13,15 @@ describe('Test - Contact Us Form - Site Two', () => {
         cy.get("a[href$='contact']").click().then(function(linkedText) {
             cy.log("This text is linkable: " + linkedText.text());
         });
+
+        cy.get("@user").then((user) => {
+
+            cy.get('#ContactUsFrm_first_name').type(user.firstName);
+            cy.get('#ContactUsFrm_email').type(user.email);
+
+        })
         
-        cy.get('#ContactUsFrm_first_name').type('Zexon');
-        cy.get('#ContactUsFrm_email').type('zelimir.ilic@gmail.com');
+        
         cy.get('#ContactUsFrm_email').should('have.attr', 'name', 'email');
         cy.get('#ContactUsFrm_enquiry').type("Some additional text for test");
         cy.get("button[title='Submit']").click();
