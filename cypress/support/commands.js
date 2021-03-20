@@ -26,6 +26,10 @@
 
 import 'cypress-file-upload';
 //Customized command
+Cypress.Commands.add("navigateToFirstSite_HomePage", () => {
+    cy.visit("/"); 
+})
+
 Cypress.Commands.add("login", (email, password) => {
 
     cy.visit("https://admin-demo.nopcommerce.com/login");
@@ -44,9 +48,19 @@ Cypress.Commands.add("selectProduct", (productItem) => {
             cy.wrap($el).click();
 
         }
-
     });
+});
 
+Cypress.Commands.add("addItemToBasket", (productItem) => {
+
+    cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) => {
+
+        if($el.text() === productItem) {
+            cy.log($el.text());
+            cy.get('.productcart').eq(index).click();
+
+        }
+    });
 });
 
 Cypress.Commands.add("fill_Form_WebDrUni", (firstName, lastName, email, comment, selector, messageText) => {

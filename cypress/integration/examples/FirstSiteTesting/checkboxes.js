@@ -21,7 +21,7 @@ describe("Verify checkboxes on first site - webdriveruniversity.com", () => {
         
         //cy.visit("http://webdriveruniversity.com/Contact-Us/contactus.html")
         //cy.get("#contact-us").click()
-        cy.visit("http://webdriveruniversity.com");
+        cy.navigateToFirstSite_HomePage();  // Set Base url on cypress.json and then custom commands (cy.visit('/'))
         cy.get("#dropdown-checkboxes-radiobuttons").invoke('removeAttr', 'target').click({force:true});
 
         //cy.get(':nth-child(5) > input').uncheck();

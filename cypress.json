@@ -2,8 +2,15 @@
 
 
 {
+    "baseUrl": "http://webdriveruniversity.com",
     "$schema": "https://on.cypress.io/cypress.schema.json",
     "defaultCommandTimeout":6000,
-    "projectId": "ajid3e"
+    "projectId": "ajid3e",
+    "ignoreTestFiles": "PageObjectPatternDemo.spec.js",
+
+    "env": {
+        "homePage": "http://webdriveruniversity.com",
+        "firstName":"Saruman" 
+    }
      
 }

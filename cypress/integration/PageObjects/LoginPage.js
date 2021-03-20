@@ -12,9 +12,9 @@ class LoginPage {
     fillEmail(value) {
 
         const field = cy.get("input[name=Email]");
-        field.clear()
+        field.clear();
         field.type(value)
-        return this
+        return this;
     }
 
     fillPassword(value) {
@@ -22,13 +22,13 @@ class LoginPage {
         const field = cy.get("input[name=Password]");
         field.clear()
         field.type(value)
-        return this
+        return this;
     }
 
     submit() {
 
         const button = cy.get("input[type=submit]");
-        button.click()
+        button.click();
     }
 
 }
