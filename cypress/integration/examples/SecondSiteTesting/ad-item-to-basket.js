@@ -1,6 +1,10 @@
-
+import Autostore_Homepage_PO from '../../PageObjects/secondSite/Autostore-Homepage-PO';
+import Autostore_Haircare_PO from '../../PageObjects/secondSite/Autostore-Haircare-PO';
 
 describe("Add multiple items to basket", () => {
+  const autostore_homepage_PO = new Autostore_Homepage_PO();
+  const autostore_haircare_PO = new Autostore_Haircare_PO();
+
     before(() => {
         cy.fixture("product").then(function(data) {
             globalThis.data = data;
@@ -8,16 +12,15 @@ describe("Add multiple items to basket", () => {
     });
 
   beforeEach(function () {
-    cy.visit("https://automationteststore.com/");
-    cy.get("a[href*='product/category&path=']").contains("Hair Care").click();
+
+    autostore_homepage_PO.accesHomepage();
+    autostore_homepage_PO.clickOnHairCareLink();
+
   });
 
   it("Add specific items to basket", () => {
 
-    globalThis.data.productName.forEach(element => {
-        cy.addItemToBasket(element);
-    });
-    cy.get('.dropdown-toggle > .fa').click();
+    autostore_haircare_PO.addHaircareProductToBasket();
 
   });
 });

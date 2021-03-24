@@ -27,7 +27,7 @@ class LoginPage {
 
     submit() {
 
-        const button = cy.get("input[type=submit]");
+        const button = cy.get("button[type=submit]");
         button.click();
     }
 

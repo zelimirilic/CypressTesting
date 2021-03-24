@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import LoginPage from "../PageObjects/LoginPage";
+import LoginPage from "../../PageObjects/zeroSite/LoginPage";
 
 describe("Test suite", function () {
   it("Valid Login test", () => {
