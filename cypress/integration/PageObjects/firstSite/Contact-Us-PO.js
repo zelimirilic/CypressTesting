@@ -10,7 +10,8 @@ class Contact_Us_PO {
         cy.get('textarea.feedback-input').type(comment);
         cy.get('[type="submit"]').click();
         cy.get(selector).contains(messageText);
-
+        cy.screenshot();
+        cy.screenshot("Made contact form...Zeljko");
     }
 
 }

@@ -4,10 +4,12 @@ class Autostore_Haircare_PO {
   addHaircareProductToBasket() {
 
     globalThis.data.productName.forEach((element) => {
-      cy.addItemToBasket(element);
+      cy.addItemToBasket(element).then(() => {
+        //debugger
+      })
     });
     
-    cy.get(".dropdown-toggle > .fa").click();
+    cy.get(".dropdown-toggle > .fa").click().debug();
   }
 }
 
