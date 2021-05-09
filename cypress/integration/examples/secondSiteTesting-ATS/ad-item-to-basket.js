@@ -1,5 +1,5 @@
-import Autostore_Homepage_PO from '../../PageObjects/secondSite/Autostore-Homepage-PO';
-import Autostore_Haircare_PO from '../../PageObjects/secondSite/Autostore-Haircare-PO';
+import Autostore_Homepage_PO from '../../PageObjects/secondSite-ATS/Autostore-Homepage-PO';
+import Autostore_Haircare_PO from '../../PageObjects/secondSite-ATS/Autostore-Haircare-PO';
 
 describe("Add multiple items to basket", () => {
   const autostore_homepage_PO = new Autostore_Homepage_PO();

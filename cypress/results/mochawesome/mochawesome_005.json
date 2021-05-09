@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T19:26:32.830Z",
+    "end": "2021-05-09T19:26:45.933Z",
+    "duration": 13103,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "230bb9c3-99b7-4efd-9038-f37255352b99",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\zeroSiteTesting-NC\\Navigation.spec.js",
+      "file": "cypress\\integration\\examples\\zeroSiteTesting-NC\\Navigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e221440-6d96-49c6-8353-96fbdc604646",
+          "title": "My test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigation Tests",
+              "fullTitle": "My test suite Navigation Tests",
+              "timedOut": null,
+              "duration": 10934,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://demo.nopcommerce.com/\");\ncy.title().should('eq', 'nopCommerce demo store');\ncy.get(\".ico-register\").contains('Reg').click();\ncy.title().should('eq', 'nopCommerce demo store. Register');\ncy.go('back');\ncy.title().should('eq', 'nopCommerce demo store');\ncy.go('forward');\ncy.title().should('eq', 'nopCommerce demo store. Register');\ncy.go(-1);\ncy.title().should('eq', 'nopCommerce demo store');\ncy.go(1);\ncy.title().should('eq', 'nopCommerce demo store. Register');\ncy.reload();",
+              "err": {},
+              "uuid": "4364a778-8d49-45b7-9e1d-1aa6614c79b1",
+              "parentUUID": "1e221440-6d96-49c6-8353-96fbdc604646",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4364a778-8d49-45b7-9e1d-1aa6614c79b1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10934,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

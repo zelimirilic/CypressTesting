@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T19:53:31.773Z",
+    "end": "2021-05-09T19:53:40.125Z",
+    "duration": 8352,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4e849b9f-834d-43f5-87c4-ef1bb41c4132",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\zeroSiteTesting-NC\\FixtureDemo.spec.js",
+      "file": "cypress\\integration\\examples\\zeroSiteTesting-NC\\FixtureDemo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "740f1953-b21b-47d9-9c03-dee4b1f66c11",
+          "title": "My Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fixture Demo Test",
+              "fullTitle": "My Test Suite Fixture Demo Test",
+              "timedOut": null,
+              "duration": 5659,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://admin-demo.nopcommerce.com/login\");\ncy.get(\"input[name=Email]\").clear().type(this.data.email);\ncy.get(\"input[name=Password]\").clear().type(this.data.password);\ncy.get(\"button[type=submit]\").click();",
+              "err": {},
+              "uuid": "9a30085e-b9d3-416c-bfc0-0bceed0b6d61",
+              "parentUUID": "740f1953-b21b-47d9-9c03-dee4b1f66c11",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a30085e-b9d3-416c-bfc0-0bceed0b6d61"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5659,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

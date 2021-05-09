@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T19:55:24.563Z",
+    "end": "2021-05-09T19:55:24.732Z",
+    "duration": 169,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d00230f3-47a6-489e-b89d-c148d5ec8406",
+      "title": "",
+      "fullFile": "cypress\\integration\\other\\json-example.js",
+      "file": "cypress\\integration\\other\\json-example.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d682c06d-dc18-4444-8323-34967dee14d2",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "JSON Object - example",
+              "fullTitle": "JSON Object JSON Object - example",
+              "timedOut": null,
+              "duration": 129,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key1\": \"Zeljko\",\n  \"key2\": \"Nikola\"\n};\nvar exampleArrayOfValues = [\"Ivana\", \"Zoki\", \"Milosh\", \"Sonja\", \"Ana\", \"Boris\", \"Ljube\"];\nvar users = {\n  \"firstName\": \"Petar\",\n  \"lastName\": \"Petrovic\",\n  \"Age\": 185,\n  \"Students\": [{\n    \"firstName\": \"Marko\",\n    \"lastName\": \"Malinovac\"\n  }, {\n    \"firstName\": \"Marina\",\n    \"lastName\": \"Markovic\"\n  }]\n};\nvar exampleArrayOfObjects = [{\n  \"key\": \"Luka\"\n}, {\n  \"key\": \"Muka\"\n}, {\n  \"key\": \"Tuka\"\n}];\ncy.log(exampleObject[\"key1\"]);\ncy.log(exampleObject[\"key2\"]);\ncy.log(exampleObject.key1);\ncy.log(exampleObject.key2);\ncy.log(exampleArrayOfValues[0]);\ncy.log(exampleArrayOfValues[1]);\ncy.log(exampleArrayOfValues[2]);\ncy.log(exampleArrayOfValues[3]);\ncy.log(exampleArrayOfValues[4]);\ncy.log(exampleArrayOfValues[5]);\ncy.log(exampleArrayOfValues[6]);\ncy.log(users.Students[1].lastName);\ncy.log(exampleArrayOfObjects[0].key);\ncy.log(exampleArrayOfObjects[1].key);\ncy.log(exampleArrayOfObjects[2].key);",
+              "err": {},
+              "uuid": "1234c43e-804c-4a0e-b916-4414661d8f69",
+              "parentUUID": "d682c06d-dc18-4444-8323-34967dee14d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1234c43e-804c-4a0e-b916-4414661d8f69"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 129,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

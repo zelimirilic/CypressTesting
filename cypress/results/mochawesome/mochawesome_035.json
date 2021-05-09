@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T19:53:57.758Z",
+    "end": "2021-05-09T19:53:58.090Z",
+    "duration": 332,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "725c00f8-c220-4360-9f50-8e61d0b61e7e",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\zeroSiteTesting-NC\\HooksDemo.spec.js",
+      "file": "cypress\\integration\\examples\\zeroSiteTesting-NC\\HooksDemo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9ffb2b4-50ae-4ea4-a3f7-3dabd27eb79e",
+          "title": "My test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "searching",
+              "fullTitle": "My test suite searching",
+              "timedOut": null,
+              "duration": 81,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"**********This is Searching Test**********\");",
+              "err": {},
+              "uuid": "7ecda796-30e3-40bd-a6b9-6cc052576b4c",
+              "parentUUID": "b9ffb2b4-50ae-4ea4-a3f7-3dabd27eb79e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "advanced searching",
+              "fullTitle": "My test suite advanced searching",
+              "timedOut": null,
+              "duration": 92,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"**********This is Advanced Searching Test**********\");",
+              "err": {},
+              "uuid": "88f0fd08-12bd-46a9-b567-4466c0e164e2",
+              "parentUUID": "b9ffb2b4-50ae-4ea4-a3f7-3dabd27eb79e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "listing products",
+              "fullTitle": "My test suite listing products",
+              "timedOut": null,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"**********This is Listing Product Test**********\");",
+              "err": {},
+              "uuid": "1ceac180-8d1a-476c-80ff-f6405aa35842",
+              "parentUUID": "b9ffb2b4-50ae-4ea4-a3f7-3dabd27eb79e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7ecda796-30e3-40bd-a6b9-6cc052576b4c",
+            "88f0fd08-12bd-46a9-b567-4466c0e164e2",
+            "1ceac180-8d1a-476c-80ff-f6405aa35842"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 203,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

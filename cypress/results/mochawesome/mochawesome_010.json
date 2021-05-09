@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T19:49:36.935Z",
+    "end": "2021-05-09T19:49:42.054Z",
+    "duration": 5119,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4e18adf9-9e56-4ff6-9fcf-ab1f04dc32a7",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\firstSiteTesting-WU\\browser-navigation.js",
+      "file": "cypress\\integration\\examples\\firstSiteTesting-WU\\browser-navigation.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "97460ed4-16c7-4966-b317-d8ca204e7e61",
+          "title": "Validate homepage links",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm links redirect to the correct page",
+              "fullTitle": "Validate homepage links Confirm links redirect to the correct page",
+              "timedOut": null,
+              "duration": 4989,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit(\"http://webdriveruniversity.com/Contact-Us/contactus.html\")\n//cy.get(\"#contact-us\").click()\ncy.visit(\"http://webdriveruniversity.com\");\ncy.get(\"#contact-us\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.url().should('include', 'contactus');\ncy.go('back');\ncy.reload();\ncy.url().should('include', 'http://webdriveruniversity.com');\ncy.go('forward');\ncy.url().should('include', 'contactus');\ncy.go('back');\ncy.get(\"#login-portal\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.url().should('include', 'Login-Portal');\ncy.go('back');\ncy.get(\"#to-do-list\").invoke(\"removeAttr\", \"target\").click({\n  force: true\n});\ncy.url().should('include', 'To-Do-List');\ncy.go('back');",
+              "err": {},
+              "uuid": "efd9d32c-5c21-46a6-a559-310dab2e8a98",
+              "parentUUID": "97460ed4-16c7-4966-b317-d8ca204e7e61",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "efd9d32c-5c21-46a6-a559-310dab2e8a98"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4989,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

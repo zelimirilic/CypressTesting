@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-05-09T19:25:38.472Z",
+    "end": "2021-05-09T19:26:25.558Z",
+    "duration": 47086,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "47630224-dae9-462f-8fff-c117b84457c5",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\zeroSiteTesting-NC\\Locators.spec.js",
+      "file": "cypress\\integration\\examples\\zeroSiteTesting-NC\\Locators.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e591e8ba-3abe-4f06-b118-873e8b95c745",
+          "title": "Locating elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify types of locators",
+              "fullTitle": "Locating elements Verify types of locators",
+              "timedOut": null,
+              "duration": 12138,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://demo.nopcommerce.com/\");\ncy.get(\"#small-searchterms\").type(\"Apple MacBook Pro 13-inch\");\ncy.get(\"[type='submit']\").click();\ncy.get(\".product-box-add-to-cart-button[value='Add to cart']\").click();\ncy.get(\"#product_enteredQuantity_4\").clear().type('3');\ncy.get(\"#add-to-cart-button-4\").click();\ncy.wait(5000);\ncy.get(\"#topcartlink > a > span.cart-label\").click();\ncy.wait(3000);\ncy.get(\".product-unit-price\").contains('$1,800.00');\ncy.get(\".product-subtotal\").contains('$5,400.00');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.product-box-add-to-cart-button[value='Add to cart']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.product-box-add-to-cart-button[value='Add to cart']`, but never found it.\n    at Context.eval (https://demo.nopcommerce.com/__cypress/tests?p=cypress\\integration\\examples\\zeroSiteTesting-NC\\Locators.spec.js:10:8)",
+                "diff": null
+              },
+              "uuid": "623d36db-e3ce-482e-a32d-0e6a9389a0b5",
+              "parentUUID": "e591e8ba-3abe-4f06-b118-873e8b95c745",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "623d36db-e3ce-482e-a32d-0e6a9389a0b5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12138,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

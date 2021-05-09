@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-09T19:50:46.605Z",
+    "end": "2021-05-09T19:50:47.560Z",
+    "duration": 955,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2505bbd5-4209-40e5-8904-8c93d87d28b7",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\firstSiteTesting-WU\\data-tables.js",
+      "file": "cypress\\integration\\examples\\firstSiteTesting-WU\\data-tables.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ccc08e8a-edf7-4f3e-bfd9-5ab1811874f2",
+          "title": "Handling data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Calculate and assert ages of user based on last name",
+              "fullTitle": "Handling data Calculate and assert ages of user based on last name",
+              "timedOut": null,
+              "duration": 868,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#thumbnail-1 tr td:nth-child(2)').each(function ($el, index, $list) {\n  var text = $el.text();\n  if (text.includes('Jones')) {\n    cy.get('#thumbnail-1 tr td:nth-child(2)').eq(index).next().then(function (age) {\n      var userAge = age.text();\n      expect(userAge).to.eq('27');\n    });\n  }\n});",
+              "err": {},
+              "uuid": "ba6b4b85-82d5-4b35-8fd2-9bbe887d3649",
+              "parentUUID": "ccc08e8a-edf7-4f3e-bfd9-5ab1811874f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ba6b4b85-82d5-4b35-8fd2-9bbe887d3649"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 868,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

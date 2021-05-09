@@ -5,6 +5,9 @@
 describe("Verify checkboxes on first site - webdriveruniversity.com", () => {
 
     beforeEach(function() {
+
+        cy.log(Cypress.env("name"));
+
         cy.visit("http://webdriveruniversity.com");
         cy.get("#dropdown-checkboxes-radiobuttons").invoke('removeAttr', 'target').click({force:true});
     });

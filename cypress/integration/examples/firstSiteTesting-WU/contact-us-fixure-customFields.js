@@ -1,5 +1,5 @@
-import Homepage_PO from '../../PageObjects/firstSite/Homepage-PO';
-import Contact_Us_PO from '../../PageObjects/firstSite/Contact-Us-PO';
+import Homepage_PO from '../../PageObjects/firstSite-WU/Homepage-PO';
+import Contact_Us_PO from '../../PageObjects/firstSite-WU/Contact-Us-PO';
 
 
 describe("Test - Contact Us Form - Site One", () => {
