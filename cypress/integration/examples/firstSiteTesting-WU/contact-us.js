@@ -6,7 +6,7 @@ describe("Test - Contact Us Form - Site One", () => {
         //cy.visit("http://webdriveruniversity.com/Contact-Us/contactus.html")
         //cy.get("#contact-us").click()
         cy.visit("http://webdriveruniversity.com");
-        cy.get("#contact-us").invoke('removeAttr', 'target').click({force:true});   //radi i sa i bez - pog;edaj dole
+        cy.get("#contact-us").invoke('removeAttr', 'target').click({force:true});   //radi i sa i bez - pogledaj dole
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8');
         cy.get('[name="first_name"]').type('Zeljko');
         cy.get('[name="last_name"]').type('Ilic');

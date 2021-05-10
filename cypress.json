@@ -3,8 +3,11 @@
     "$schema": "https://on.cypress.io/cypress.schema.json",
     "defaultCommandTimeout": 6000,
     "projectId": "ajid3e",
+    "retries": {
+        "runMode": 0,
+        "openMode": 0
+    },  
     "env": {
-        "RETRIES": 2,
         "homePage": "http://webdriveruniversity.com/",
         "firstName": "Saruman"
     },

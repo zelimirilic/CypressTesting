@@ -35,6 +35,3 @@ module.exports = (on, config) => {
   return getConfigurationByFile(file)
 }
 
-module.exports = (on, config) => {
-  require('cypress-plugin-retries/lib/plugin')(on)
-}
