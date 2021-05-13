@@ -8,6 +8,7 @@
     "triggerAllTests-headed": "npx cypress run --headed",
     "triggerAllTests-chrome": "npx cypress run --browser chrome",
     "triggerAllTests-dashboard": "npx cypress run --record --key 002d8815-c1d9-4ff8-ad33-69f9535ffdce",
+    "triggerAllTests-cucumber": "npx cypress run --spec cypress/integration/examples/firstSiteTesting-WU/features/*.feature --browser chrome",
     "triggerAllTests-zeroSiteTesting": "npx cypress run --spec cypress/integration/examples/zeroSiteTesting-NC/*",
     "triggerAllTests-firstSiteTesting-WU": "npx cypress run --spec cypress/integration/examples/firstSiteTesting-WU/*",
     "triggerAllTests-autoTestStore": "npx cypress run --spec cypress/integration/examples/secondSiteTesting-ATS/* --headed",
@@ -23,7 +24,8 @@
   "author": "zoltan",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^5.6.0",
+    "cypress": "^6.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.1",
     "cypress-file-upload": "^5.0.2",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
