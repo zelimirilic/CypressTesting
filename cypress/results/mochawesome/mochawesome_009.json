@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-10T09:44:54.854Z",
+    "end": "2021-05-10T09:45:10.201Z",
+    "duration": 15347,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7a4711e6-a06e-48dd-bdb0-c797872524b8",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\secondSiteTesting-ATS\\inspect-item.js",
+      "file": "cypress\\integration\\examples\\secondSiteTesting-ATS\\inspect-item.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "605a4be8-7291-4775-84e3-4e4b9af30b62",
+          "title": "Automation using chain of commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Click on third item using item header",
+              "fullTitle": "Automation using chain of commands Click on third item using item header",
+              "timedOut": null,
+              "duration": 4525,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationteststore.com/\");\ncy.get('#block_frame_featured_1769 > .thumbnails > :nth-child(3) > .fixed_wrapper > .fixed > .prdocutname').click();",
+              "err": {},
+              "uuid": "eb3d7ce3-0ab3-4746-92c1-00bf508c7117",
+              "parentUUID": "605a4be8-7291-4775-84e3-4e4b9af30b62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on third item using item header",
+              "fullTitle": "Automation using chain of commands Click on third item using item header",
+              "timedOut": null,
+              "duration": 2007,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationteststore.com/\");\ncy.get('.prdocutname').contains('Bamba').click();",
+              "err": {},
+              "uuid": "40a8e4e5-93bd-4875-9092-8606c0a56d3d",
+              "parentUUID": "605a4be8-7291-4775-84e3-4e4b9af30b62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on third item using item header",
+              "fullTitle": "Automation using chain of commands Click on third item using item header",
+              "timedOut": null,
+              "duration": 6282,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationteststore.com/\");\ncy.get('.fixed_wrapper').find('.prdocutname').eq(2).click().then(function (textOfHeader) {\n  console.log(\"This is text of the third item: \" + textOfHeader.text());\n});",
+              "err": {},
+              "uuid": "138b8d18-c27b-47d2-a9d3-60aec9abfdd7",
+              "parentUUID": "605a4be8-7291-4775-84e3-4e4b9af30b62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb3d7ce3-0ab3-4746-92c1-00bf508c7117",
+            "40a8e4e5-93bd-4875-9092-8606c0a56d3d",
+            "138b8d18-c27b-47d2-a9d3-60aec9abfdd7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12814,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

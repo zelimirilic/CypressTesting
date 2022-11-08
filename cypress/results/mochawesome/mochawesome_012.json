@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-12T22:05:19.570Z",
+    "end": "2021-05-12T22:05:25.986Z",
+    "duration": 6416,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ef70bcc5-0126-416b-91b9-aceb73deb765",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\firstSiteTesting-WU\\features\\login.feature",
+      "file": "cypress\\integration\\examples\\firstSiteTesting-WU\\features\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+          "title": "WU - Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using invalid credentials",
+              "fullTitle": "WU - Login Page Login using invalid credentials",
+              "timedOut": null,
+              "duration": 1888,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "fe1bf583-fe34-49b6-94cb-f53357050db1",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using valid credentials",
+              "fullTitle": "WU - Login Page Login using valid credentials",
+              "timedOut": null,
+              "duration": 780,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "ec5953f0-ad0f-40db-bf81-7d8e54d5b3a2",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login on WU site (example #1)",
+              "fullTitle": "WU - Login Page Test Login on WU site (example #1)",
+              "timedOut": null,
+              "duration": 709,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6d1df622-d087-4192-8683-cd64fb015638",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login on WU site (example #2)",
+              "fullTitle": "WU - Login Page Test Login on WU site (example #2)",
+              "timedOut": null,
+              "duration": 771,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9c3c946d-baae-46bd-8af9-f583802cf187",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login on WU site (example #3)",
+              "fullTitle": "WU - Login Page Test Login on WU site (example #3)",
+              "timedOut": null,
+              "duration": 763,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "43475f29-c128-473c-965f-6dc7d8972a5f",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login on WU site (example #4)",
+              "fullTitle": "WU - Login Page Test Login on WU site (example #4)",
+              "timedOut": null,
+              "duration": 732,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "ef9e3667-464f-41b9-92b4-ce9cf42cbd93",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login on WU site (example #5)",
+              "fullTitle": "WU - Login Page Test Login on WU site (example #5)",
+              "timedOut": null,
+              "duration": 698,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "214a70b8-23f7-4b8a-a245-2530e40218a8",
+              "parentUUID": "c759be54-8cb8-4616-9006-30b8ce4a80de",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fe1bf583-fe34-49b6-94cb-f53357050db1",
+            "ec5953f0-ad0f-40db-bf81-7d8e54d5b3a2",
+            "6d1df622-d087-4192-8683-cd64fb015638",
+            "9c3c946d-baae-46bd-8af9-f583802cf187",
+            "43475f29-c128-473c-965f-6dc7d8972a5f",
+            "ef9e3667-464f-41b9-92b4-ce9cf42cbd93",
+            "214a70b8-23f7-4b8a-a245-2530e40218a8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6341,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

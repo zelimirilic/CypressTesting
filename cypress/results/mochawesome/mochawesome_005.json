@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-10T09:42:29.295Z",
+    "end": "2021-05-10T09:42:37.387Z",
+    "duration": 8092,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3b757f2d-32f6-4c4c-91de-40bdca362998",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\secondSiteTesting-ATS\\variables-and-commands.js",
+      "file": "cypress\\integration\\examples\\secondSiteTesting-ATS\\variables-and-commands.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b082cea4-4507-49c8-a3e0-c00c9ad047ef",
+          "title": "Verifying variables, cy and jq commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to a specific product page",
+              "fullTitle": "Verifying variables, cy and jq commands Navigate to a specific product page",
+              "timedOut": null,
+              "duration": 4625,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationteststore.com/\");\ncy.get(\"a[href*='product/category&path=']\").contains('Apparel & accessories').click();\ncy.get(\"a[href*='product/category&path=']\").contains('Fragrance').click();",
+              "err": {},
+              "uuid": "4215b0a3-d147-492b-b550-4e3ec6aec4b2",
+              "parentUUID": "b082cea4-4507-49c8-a3e0-c00c9ad047ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navigate to another specific product page",
+              "fullTitle": "Verifying variables, cy and jq commands Navigate to another specific product page",
+              "timedOut": null,
+              "duration": 1352,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationteststore.com/\");\ncy.get(\"a[href*='product/category&path=']\").contains('Fragrance').click();\ncy.get(\"h1 .maintext\").then(function ($headerText) {\n  var headerText = $headerText.text();\n  cy.log(\"Header text is: \" + headerText);\n  expect(headerText).is.equal('Fragrance');\n});",
+              "err": {},
+              "uuid": "60bde8fc-ba10-4182-bda4-9650199e7ef4",
+              "parentUUID": "b082cea4-4507-49c8-a3e0-c00c9ad047ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate properties of the Contact Us page",
+              "fullTitle": "Verifying variables, cy and jq commands Validate properties of the Contact Us page",
+              "timedOut": null,
+              "duration": 759,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationteststore.com/index.php?rt=content/contact\");\ncy.contains('#ContactUsFrm', 'Contact Us Form').find('#field_11').should('contain', 'First name');\ncy.contains('#ContactUsFrm', 'Contact Us Form').then(function (textOfForm) {\n  var firstNameText = textOfForm.find('#field_11').text();\n  expect(firstNameText).to.contain('First name');\n});\ncy.get('#field_11').then(function (nextText) {\n  cy.log(nextText.text());\n});",
+              "err": {},
+              "uuid": "15e14ac4-e531-4762-b848-3a2f4b54adaa",
+              "parentUUID": "b082cea4-4507-49c8-a3e0-c00c9ad047ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4215b0a3-d147-492b-b550-4e3ec6aec4b2",
+            "60bde8fc-ba10-4182-bda4-9650199e7ef4",
+            "15e14ac4-e531-4762-b848-3a2f4b54adaa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6736,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

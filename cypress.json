@@ -1,14 +1,19 @@
-
-
-
 {
     "baseUrl": "http://webdriveruniversity.com",
     "$schema": "https://on.cypress.io/cypress.schema.json",
-    "defaultCommandTimeout":6000,
+    "defaultCommandTimeout": 6000,
     "projectId": "ajid3e",
+    "retries": {
+        "runMode": 0,
+        "openMode": 0
+    },  
     "env": {
         "homePage": "http://webdriveruniversity.com/",
-        "firstName":"Saruman" 
-    }
-     
+        "firstName": "Saruman"
+    },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    },
+    "experimentalStudio": true
 }
